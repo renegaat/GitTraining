@@ -15,7 +15,7 @@ public class Fahrkarte {
     }
 
     public double getPreis() {
-        return preis;
+        return preis + 20;
     }
 
     public void setPreis(double preis) {
