@@ -8,6 +8,6 @@ public class Fahrkartenautomat {
     }
 
     public Fahrkartenautomat(){
-        this(42);
+        this(45);
     }
 }
