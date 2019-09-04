@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         FahrkartenServiceImpl fahrkartenService = new FahrkartenServiceImpl();
-        Fahrkarte meineFahrKarte = fahrkartenService.erzeugeFahrKarte(10, "Meine Fahrkarte");
+        Fahrkarte meineFahrKarte = fahrkartenService.erzeugeFahrKarte(2, "Meine Fahrkarte");
 
         System.out.println(meineFahrKarte.toString());
     }
