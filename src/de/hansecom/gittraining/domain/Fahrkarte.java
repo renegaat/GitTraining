@@ -1,5 +1,7 @@
 package de.hansecom.gittraining.domain;
 
+import java.util.Objects;
+
 public class Fahrkarte {
     public double preis;
     public String name;
@@ -7,6 +9,20 @@ public class Fahrkarte {
     public Fahrkarte(double preis, String name) {
         this.preis = preis;
         this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Fahrkarte fahrkarte = (Fahrkarte) o;
+        return Double.compare(fahrkarte.preis, preis) == 0 &&
+                Objects.equals(name, fahrkarte.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(preis, name);
     }
 
     @Override
