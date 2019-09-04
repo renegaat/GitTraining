@@ -11,7 +11,7 @@ public class Fahrkarte {
 
     @Override
     public String toString() {
-        return "Preis :  " + preis + " Name : " + name;
+        return "Preis:  " + preis + " Name: " + name + "Ende";
     }
 
     public double getPreis() {
